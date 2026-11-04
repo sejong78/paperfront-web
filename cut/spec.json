@@ -1,0 +1,113 @@
+{
+ "ppu": 100,
+ "pad": 14,
+ "note": "Cutout rig for 03 (line defense, unit 104px = native/3). 4 drawings, all rigid: torso (backpack painted on), head (helmet painted on), arm (BOTH arms + rifle as one piece, pivot = near shoulder; far arm copy hidden by 'single'), leg (used twice). Proportions measured on source/template_cut/gpt/rifleman_motions.png idle-1 / shoot-aim cells (chibi: head ~40% of height, sheet 195px tall x1.6 = native 312). 12fps stepped clips.",
+ "slots": [
+  {
+   "name": "torso",
+   "canvas": [
+    150,
+    140
+   ],
+   "pivot": [
+    95,
+    30
+   ],
+   "attach": [
+    {
+     "name": "neck",
+     "pos": [
+      100,
+      128
+     ]
+    },
+    {
+     "name": "shoulder",
+     "pos": [
+      92,
+      108
+     ]
+    },
+    {
+     "name": "hip_front",
+     "pos": [
+      100,
+      30
+     ]
+    },
+    {
+     "name": "hip_back",
+     "pos": [
+      86,
+      30
+     ]
+    }
+   ],
+   "note": "side view, chest right, backpack on the left (back). No arms painted. Standing collar hides the neck stub (head drawn behind). Belt + pouches at y~45, tunic hem covers the hip joints"
+  },
+  {
+   "name": "head",
+   "canvas": [
+    180,
+    160
+   ],
+   "pivot": [
+    100,
+    10
+   ],
+   "attach": [],
+   "note": "head WITH helmet painted on, face looks right, neck stub at the bottom. pivot = neck base"
+  },
+  {
+   "name": "arm",
+   "canvas": [
+    230,
+    130
+   ],
+   "pivot": [
+    25,
+    95
+   ],
+   "attach": [
+    {
+     "name": "hand",
+     "pos": [
+      120,
+      58
+     ]
+    }
+   ],
+   "handIncluded": true,
+   "single": true,
+   "note": "near arm from the shoulder (pivot) to the pistol grip + far arm on the fore-end + the rifle, one rigid piece, muzzle right. Rotates at the shoulder: aim up / lower for reload"
+  },
+  {
+   "name": "leg",
+   "canvas": [
+    80,
+    90
+   ],
+   "pivot": [
+    40,
+    82
+   ],
+   "attach": [],
+   "note": "hip (pivot) to boot sole, boot toe right, straight stubby leg"
+  }
+ ],
+ "units": {
+  "grenadier": {
+   "scale": 0.77
+  },
+  "sniper": {
+   "scale": 0.77
+  },
+  "mg": {
+   "scale": 1.31
+  },
+  "powerarmor": {
+   "scale": 1.31
+  },
+  "_note": "body size x regular(104px). small 80 -> 0.77, huge 136 -> 1.31 (idea doc 유닛 크기). theme name <unit>_<era> maps by the part before '_'"
+ }
+}

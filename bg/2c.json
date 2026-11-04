@@ -1,0 +1,1 @@
+{"lip":48,"fx":[{"kind":"breathe","img":["flag"],"layer":"mid","x":[560],"y":412,"anchor":[0.5,1],"scale":0.6,"sway":0.05,"steady":true,"alpha":0.9},{"kind":"drift","img":["cloud1","cloud2","cloud3"],"layer":"far","n":5,"vx":7,"y":[40,130],"sway":0,"spin":0,"kspread":0.2,"scale":0.7,"alpha":0.45}]}

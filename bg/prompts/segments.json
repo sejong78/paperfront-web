@@ -1,0 +1,44 @@
+{
+  "1b": {
+    "far": "dusk, a dark dense conifer forest ridge in layers, blue-grey far mountains, a thin column of grey smoke rising from a distant crash site behind the ridge, cool evening light",
+    "mid": "dark pine trunks and undergrowth, a fallen tree, mossy boulders, a wrecked purple alien UFO hull half-buried with a few bent metal plates, torn parachute cloth on a branch, scattered glowing purple debris (tiny), ferns",
+    "ground": "dark forest floor: pine needles, roots, moss, a few purple metal shards, packed dark soil below",
+    "palette": "evening - deep greens, blue-grey, dark brown, small purple accents"
+  },
+  "1c": {
+    "far": "sunset, long rolling ridge lines in warm orange and purple haze, a distant radio mast on a hilltop, a few bare trees in silhouette",
+    "mid": "hilltop defence line: sandbag walls, a wooden watchtower, coils of barbed wire on posts, a tank trap, a torn military flag, dry grass clumps, ammo crates",
+    "ground": "dry hillside dirt road, dead grass, gravel, shell craters, cracked earth below",
+    "palette": "sunset - orange, ochre, dusty purple shadows, khaki"
+  },
+  "1d": {
+    "far": "night, an alien hive landscape: giant purple fleshy mounds and bone-white spikes against the dark, glowing pink pods, a huge dark nest silhouette with a red glow at its core",
+    "mid": "alien growth: purple tendrils and tentacles rising from the ground, pulsing pink egg sacs, bone spikes, webbed membranes between stalks, a half-swallowed farmhouse ruin wrapped in purple flesh",
+    "ground": "ground covered by purple alien flesh and veins with glowing pink cracks, a few bone shards, dark fleshy layers below",
+    "palette": "night - deep purple, magenta glow (NOT pure #FF00FF, use #d040c0 and darker), bone white, near black; keep the pure magenta #FF00FF strictly for the empty background"
+  },
+  "2a": {
+    "far": "overcast grey day, a ruined city skyline: broken concrete towers, a collapsed bridge, cranes, smoke plumes, distant purple alien spire just visible",
+    "mid": "ruined street: cracked apartment facades with broken windows, a tipped bus, rubble piles, a burnt car, lamp posts leaning, a traffic light, torn posters, concrete barriers",
+    "ground": "cracked asphalt road with a kerb and painted lane markings along the top, rubble, rebar, dark concrete and soil layers below",
+    "palette": "grey overcast - concrete greys, rust, dull blue, dirty white"
+  },
+  "2b": {
+    "far": "underground: a long subway tunnel wall receding, concrete arches and pillars, rows of pipes and cables, dim green emergency lamps along the wall",
+    "mid": "subway / sewer scenery: a derailed subway car, ticket gates, tiled walls with graffiti, big sewer pipes dripping, valve wheels, a ladder, puddles with green glow, stacked crates, rats",
+    "ground": "subway platform edge / wet sewer walkway along the top (tiles and a rail), dark brick and concrete below with a water channel",
+    "palette": "underground - dark teal, concrete grey, green emergency light, rust"
+  },
+  "2c": {
+    "far": "high above the city: tops of skyscrapers below the horizon line, clouds at eye level, a bright blue sky, a few helicopters-sized specks, far alien spire",
+    "mid": "rooftop clutter: water tanks, air-conditioning units, antenna masts, a billboard frame, a rooftop shed, a helipad marking, chimneys, safety railings, laundry lines",
+    "ground": "flat rooftop: concrete slabs with tar seams along the top, a low parapet edge, vents, the building's upper floor windows below",
+    "palette": "bright high altitude - sky blue, white, light concrete, orange safety accents"
+  },
+  "2d": {
+    "far": "night, a city consumed by alien growth: skyscrapers wrapped in purple flesh, a colossal alien spire / control tower with glowing pink rings, purple lightning in the clouds",
+    "mid": "plaza ruins overtaken: a fountain filled with purple ooze, statues wrapped in tendrils, alien pods on the buildings, bone-white structures growing from the pavement, a crashed helicopter cocooned",
+    "ground": "plaza paving stones cracked by purple veins and glowing pink fissures along the top, alien flesh and dark layers below",
+    "palette": "night - deep purple, pink glow (#d040c0 and darker, never pure #FF00FF), near black, bone white; pure magenta #FF00FF strictly for the empty background"
+  }
+}

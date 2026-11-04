@@ -1,0 +1,1 @@
+{"lip":35,"fx":[{"kind":"flash","every":[20,40],"alpha":0.6},{"kind":"breathe","img":["glow"],"layer":"mid","x":[760],"y":300,"scale":2.6,"every":2.4,"blend":"add","alpha":0.5}]}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="icon" href="data:," />
+  <title>종이 전선 / Paper Front</title>
+  <style>@font-face{font-family:Pretendard;src:url(./fonts/Pretendard.woff2)format("woff2");font-weight:100 900;font-display:block}html,body{background:#000;height:100%;margin:0;overflow:hidden}body{justify-content:center;align-items:center;display:flex}canvas{touch-action:none;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;display:block}</style>
+  <script type="module" crossorigin src="./assets/index-BdSrGfVy.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/CanvasPool-D4wB_kti.js">
+  <link rel="modulepreload" crossorigin href="./assets/canvasUtils-DXdpO74x.js">
+  <link rel="modulepreload" crossorigin href="./assets/getPo2TextureFromSource-CUGGgk-7.js">
+  <link rel="modulepreload" crossorigin href="./assets/RenderTargetSystem-DPg7CKPc.js">
+  <link rel="modulepreload" crossorigin href="./assets/getTextureBatchBindGroup-BWcBzlHW.js">
+  <link rel="modulepreload" crossorigin href="./assets/CanvasRenderer-3OLkDK7O.js">
+  <link rel="modulepreload" crossorigin href="./assets/getTexelRangeRects-BLorNLR3.js">
+</head>
+<body>
+  <!-- ONE store H5 SDK (required for ONE store listing). Outside the ONE store app it resolves with err; if it fails to load, the game module still runs on its own -->
+  <!-- classic script so Vite leaves it in the HTML and it starts before the game module -->
+  <script>
+    import("https://h5sdk.onestore.net/lib/v1.1.0/onestore-h5-sdk.min.js").then(({ createSDK }) => {
+      const sdk = createSDK();
+      // lifecycle -> game (main.ts host:* listeners); exit = pause too, progress is already saved on every change
+      sdk.on("pause", () => dispatchEvent(new Event("host:pause")));
+      sdk.on("resume", () => dispatchEvent(new Event("host:resume")));
+      sdk.onClose(() => dispatchEvent(new Event("host:pause")));
+      return sdk.initializeAsync().then((info) => {
+        if (info.err) return;
+        sdk.setLoadingProgress(100);
+        return sdk.startGameAsync();
+      });
+    }).catch((e) => console.warn("onestore sdk", e));
+  </script>
+</body>
+</html>

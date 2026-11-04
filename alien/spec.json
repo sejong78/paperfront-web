@@ -1,0 +1,98 @@
+{
+ "ppu": 100,
+ "pad": 14,
+ "note": "Cutout rig for 03 ALIEN bipeds (enemy #3 sniper alien). Same 4 rigid slots as PaperDollCut (torso/head/arm/leg), alien proportions: lanky, long legs, elongated skull, long bio-rifle. Native ~340px tall -> ~114px in game (allies 104). Template source/template_alien (tools/template_cut.py --alien).",
+ "slots": [
+  {
+   "name": "torso",
+   "canvas": [
+    110,
+    120
+   ],
+   "pivot": [
+    60,
+    30
+   ],
+   "attach": [
+    {
+     "name": "neck",
+     "pos": [
+      62,
+      112
+     ]
+    },
+    {
+     "name": "shoulder",
+     "pos": [
+      54,
+      96
+     ]
+    },
+    {
+     "name": "hip_front",
+     "pos": [
+      62,
+      30
+     ]
+    },
+    {
+     "name": "hip_back",
+     "pos": [
+      48,
+      30
+     ]
+    }
+   ],
+   "note": "narrow chitin chest, side view facing right. No arms painted. Thin neck stub hidden under the head. hip joints at y=30 under a short pelvis plate"
+  },
+  {
+   "name": "head",
+   "canvas": [
+    150,
+    150
+   ],
+   "pivot": [
+    60,
+    10
+   ],
+   "attach": [],
+   "note": "elongated skull swept back-left, big eye looking right, neck stub at the bottom. pivot = neck base"
+  },
+  {
+   "name": "arm",
+   "canvas": [
+    260,
+    110
+   ],
+   "pivot": [
+    25,
+    80
+   ],
+   "attach": [
+    {
+     "name": "hand",
+     "pos": [
+      135,
+      48
+     ]
+    }
+   ],
+   "handIncluded": true,
+   "single": true,
+   "note": "BOTH thin arms + long bio sniper rifle as one rigid piece, shoulder cap at the left = pivot, muzzle right"
+  },
+  {
+   "name": "leg",
+   "canvas": [
+    70,
+    140
+   ],
+   "pivot": [
+    35,
+    132
+   ],
+   "attach": [],
+   "note": "long thin digitigrade leg, hip (pivot) at the top, two-toed foot pointing right"
+  }
+ ]
+}

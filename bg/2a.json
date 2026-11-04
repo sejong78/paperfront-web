@@ -1,0 +1,1 @@
+{"lip":17,"fx":[{"kind":"puff","img":["smoke"],"layer":"mid","x":[260,900],"y":330,"every":1.1,"vy":-12,"vx":7,"scale":0.5,"grow":2.2,"alpha":0.5},{"kind":"drift","img":["scrap1","scrap3"],"layer":"mid","n":5,"vx":70,"y":[240,400],"scale":0.22,"spin":2.5,"alpha":0.5}]}

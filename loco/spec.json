@@ -1,0 +1,437 @@
+{
+ "ppu": 100,
+ "pad": 14,
+ "note": "Off-rig locomotion set for 03 line-defense enemies (runtime/loco.ts). Chain (worm) = 3 drawings head/seg/tail, seg repeated N times; positions come from code, not clips. Pivot = chain joint. Template source/template_chain (tools/template_cut.py --chain). Sprites/<slot>/<theme>.png like the cutout sets. Float (jelly/commander) = pieces hanging off a hovering body joint; template source/template_float (--float). Roll (charger) = 1 drawing ball, pivot centre; Bounce (hopper) = 1 drawing body, pivot bottom centre; template source/template_roll (--roll). Legs-N (shell beast / bug) = body (pivot root on the ground) + leg (pivot hip) x N + optional head (pivot neck) / hind leg; template source/template_legs (--legs).",
+ "slots": [
+  {
+   "name": "head",
+   "canvas": [
+    150,
+    120
+   ],
+   "pivot": [
+    30,
+    60
+   ],
+   "attach": []
+  },
+  {
+   "name": "seg",
+   "canvas": [
+    90,
+    100
+   ],
+   "pivot": [
+    45,
+    50
+   ],
+   "attach": []
+  },
+  {
+   "name": "tail",
+   "canvas": [
+    110,
+    80
+   ],
+   "pivot": [
+    90,
+    40
+   ],
+   "attach": []
+  },
+  {
+   "name": "bell",
+   "canvas": [
+    160,
+    130
+   ],
+   "pivot": [
+    80,
+    65
+   ],
+   "attach": []
+  },
+  {
+   "name": "tent",
+   "canvas": [
+    140,
+    150
+   ],
+   "pivot": [
+    70,
+    8
+   ],
+   "attach": []
+  },
+  {
+   "name": "ball",
+   "canvas": [
+    120,
+    120
+   ],
+   "pivot": [
+    60,
+    60
+   ],
+   "attach": []
+  },
+  {
+   "name": "body",
+   "canvas": [
+    120,
+    110
+   ],
+   "pivot": [
+    60,
+    110
+   ],
+   "attach": []
+  },
+  {
+   "name": "shell",
+   "canvas": [
+    190,
+    120
+   ],
+   "pivot": [
+    95,
+    120
+   ],
+   "attach": []
+  },
+  {
+   "name": "sleg",
+   "canvas": [
+    44,
+    80
+   ],
+   "pivot": [
+    22,
+    6
+   ],
+   "attach": []
+  },
+  {
+   "name": "shead",
+   "canvas": [
+    100,
+    90
+   ],
+   "pivot": [
+    10,
+    50
+   ],
+   "attach": []
+  },
+  {
+   "name": "bug",
+   "canvas": [
+    120,
+    64
+   ],
+   "pivot": [
+    60,
+    64
+   ],
+   "attach": []
+  },
+  {
+   "name": "bleg",
+   "canvas": [
+    30,
+    54
+   ],
+   "pivot": [
+    15,
+    5
+   ],
+   "attach": []
+  },
+  {
+   "name": "hleg",
+   "canvas": [
+    70,
+    76
+   ],
+   "pivot": [
+    60,
+    8
+   ],
+   "attach": []
+  }
+ ],
+ "units": {
+  "worm": {
+   "kind": "chain",
+   "n": 6,
+   "gap": 48,
+   "amp": 18,
+   "wave": 300,
+   "speed": 1.2,
+   "squeeze": 0.06,
+   "rest": 50,
+   "headTip": 45
+  },
+  "jelly": {
+   "kind": "float",
+   "hover": 240,
+   "bob": 14,
+   "period": 2.4,
+   "tilt": 6,
+   "rest": 65,
+   "pieces": [
+    {
+     "slot": "bell",
+     "x": 0,
+     "y": 0
+    },
+    {
+     "slot": "tent",
+     "x": -42,
+     "y": 52,
+     "lag": 0.15,
+     "sway": 12
+    },
+    {
+     "slot": "tent",
+     "x": 0,
+     "y": 58,
+     "lag": 0.3,
+     "sway": 14
+    },
+    {
+     "slot": "tent",
+     "x": 42,
+     "y": 52,
+     "lag": 0.45,
+     "sway": 12
+    }
+   ]
+  },
+  "commander": {
+   "kind": "float",
+   "hover": 200,
+   "bob": 10,
+   "period": 1.8,
+   "tilt": 4,
+   "rest": 65,
+   "pieces": [
+    {
+     "slot": "bell",
+     "x": 0,
+     "y": 0
+    },
+    {
+     "slot": "tent",
+     "x": -24,
+     "y": 50,
+     "lag": 0.1,
+     "sway": 10
+    },
+    {
+     "slot": "tent",
+     "x": 24,
+     "y": 50,
+     "lag": 0.3,
+     "sway": 10
+    }
+   ]
+  },
+  "charger": {
+   "kind": "roll",
+   "r": 56
+  },
+  "hopper": {
+   "kind": "bounce",
+   "period": 1.2,
+   "crouch": 0.25,
+   "air": 0.55,
+   "height": 140,
+   "squash": 0.7,
+   "stretch": 1.25
+  },
+  "shellbeast": {
+   "kind": "legs",
+   "period": 0.9,
+   "bob": 2,
+   "dieRot": 180,
+   "body": {
+    "slot": "shell",
+    "x": 0,
+    "y": 0
+   },
+   "pieces": [
+    {
+     "slot": "sleg",
+     "x": -62,
+     "y": -70,
+     "swing": 20,
+     "phase": 0
+    },
+    {
+     "slot": "sleg",
+     "x": -46,
+     "y": -74,
+     "swing": 20,
+     "phase": 3.141592653589793,
+     "back": true
+    },
+    {
+     "slot": "sleg",
+     "x": 34,
+     "y": -70,
+     "swing": 20,
+     "phase": 3.141592653589793
+    },
+    {
+     "slot": "sleg",
+     "x": 50,
+     "y": -74,
+     "swing": 20,
+     "phase": 0,
+     "back": true
+    },
+    {
+     "slot": "shead",
+     "x": 46,
+     "y": -68,
+     "head": true
+    }
+   ],
+   "h": 120
+  },
+  "bug": {
+   "kind": "legs",
+   "period": 0.5,
+   "bob": 1,
+   "dieRot": 180,
+   "body": {
+    "slot": "bug",
+    "x": 0,
+    "y": -20
+   },
+   "pieces": [
+    {
+     "slot": "bleg",
+     "x": -34,
+     "y": -49,
+     "swing": 20,
+     "phase": 0
+    },
+    {
+     "slot": "bleg",
+     "x": -26,
+     "y": -53,
+     "swing": 20,
+     "phase": 3.141592653589793,
+     "back": true
+    },
+    {
+     "slot": "bleg",
+     "x": -14,
+     "y": -49,
+     "swing": 20,
+     "phase": 3.141592653589793
+    },
+    {
+     "slot": "bleg",
+     "x": -6,
+     "y": -53,
+     "swing": 20,
+     "phase": 0,
+     "back": true
+    },
+    {
+     "slot": "bleg",
+     "x": 6,
+     "y": -49,
+     "swing": 20,
+     "phase": 0
+    },
+    {
+     "slot": "bleg",
+     "x": 14,
+     "y": -53,
+     "swing": 20,
+     "phase": 3.141592653589793,
+     "back": true
+    }
+   ],
+   "h": 64
+  },
+  "grasshopper": {
+   "kind": "legs",
+   "period": 0.5,
+   "bob": 1,
+   "dieRot": 180,
+   "body": {
+    "slot": "bug",
+    "x": 0,
+    "y": -20
+   },
+   "pieces": [
+    {
+     "slot": "hleg",
+     "x": -30,
+     "y": -50,
+     "swing": 12,
+     "phase": 0
+    },
+    {
+     "slot": "hleg",
+     "x": -20,
+     "y": -54,
+     "swing": 12,
+     "phase": 3.141592653589793,
+     "back": true
+    },
+    {
+     "slot": "bleg",
+     "x": 6,
+     "y": -49,
+     "swing": 20,
+     "phase": 3.141592653589793
+    },
+    {
+     "slot": "bleg",
+     "x": 16,
+     "y": -53,
+     "swing": 20,
+     "phase": 0,
+     "back": true
+    },
+    {
+     "slot": "bleg",
+     "x": 36,
+     "y": -49,
+     "swing": 20,
+     "phase": 0
+    },
+    {
+     "slot": "bleg",
+     "x": 46,
+     "y": -53,
+     "swing": 20,
+     "phase": 3.141592653589793,
+     "back": true
+    }
+   ],
+   "h": 64
+  },
+  "drone": {
+   "kind": "float",
+   "hover": 120,
+   "bob": 6,
+   "period": 1.0,
+   "tilt": 3,
+   "rest": 82,
+   "pieces": [
+    {
+     "slot": "bell",
+     "x": 0,
+     "y": 0
+    }
+   ]
+  }
+ }
+}

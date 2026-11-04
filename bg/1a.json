@@ -1,0 +1,1 @@
+{"lip":38,"fx":[{"kind":"drift","img":["leaf1","leaf2","leaf3"],"layer":"mid","n":10,"vx":6,"vy":16,"y":[70,380],"scale":0.22,"spin":0.8,"alpha":0.5},{"kind":"drift","img":["cloud1","cloud2","cloud3"],"layer":"far","n":4,"vx":4,"y":[40,130],"sway":0,"spin":0,"kspread":0.2,"scale":0.7,"alpha":0.45}]}

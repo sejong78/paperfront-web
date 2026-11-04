@@ -1,0 +1,1 @@
+{"lip":50,"fx":[{"kind":"breathe","img":["glow"],"layer":"mid","x":[700],"y":300,"scale":3,"every":2.8,"blend":"add","alpha":0.5},{"kind":"drift","img":["spore"],"layer":"mid","n":10,"vx":2,"vy":-10,"y":[200,400],"scale":0.3,"blend":"add","alpha":0.5}]}

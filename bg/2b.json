@@ -1,0 +1,1 @@
+{"lip":4,"fx":[{"kind":"puff","img":["steam"],"layer":"mid","x":[540,980],"y":330,"every":[4,8],"vy":-26,"vx":2,"scale":0.6,"grow":2.6,"alpha":0.5},{"kind":"drip","img":["drop"],"layer":"mid","x":[300,760,1180],"y":170,"every":[1.2,3],"scale":0.2,"alpha":0.5}]}
